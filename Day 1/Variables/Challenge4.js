@@ -1,8 +1,5 @@
-const prompt= require("prompt-sync")();
-
-let Kilomètres = prompt(please enter your litters amount")
-let Litres = 35
-let Consomation = (Litres / Kilomètres) * 100
-console.log("Distance : ",Kilomètres, "km")
-console.log("Carburant : ",Litres,"litres")
-console.log("Consomation : ",Consomation, "km")
+const prompt = require('prompt-sync')();
+let kilomètres = +prompt("Give us the distance traveled in kilometers : ",)
+let litres = +prompt("Give us the amount of fuel consumed in liters : ")
+let Consommation = Math.floor((litres / kilomètres) * 100)
+console.log(Consommation, "L/100 km")
